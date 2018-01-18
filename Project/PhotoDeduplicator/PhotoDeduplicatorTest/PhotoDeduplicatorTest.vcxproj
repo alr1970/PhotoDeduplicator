@@ -155,12 +155,16 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="imageFileFinderTest.cpp" />
     <ClCompile Include="PhotoDeduplicatorTest.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\GTest\GTest.vcxproj">
       <Project>{bfc0de99-14dc-41f6-8c70-6277bfdb599e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\deduplicatorInternals\deduplicatorInternals.vcxproj">
+      <Project>{876702d6-4d19-4c50-aa32-ff5b16bbba01}</Project>
     </ProjectReference>
     <ProjectReference Include="..\Project1\Project1.vcxproj">
       <Project>{4a1ceb33-f26e-47ca-8df7-8bcb05e125d9}</Project>

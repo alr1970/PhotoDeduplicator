@@ -3,8 +3,8 @@
 
 TEST(ImageFileFinder, findFrom)
 {
-	ImageFileFinder finder("C:\testData");
+	ImageFileFinder finder("C:/testData");
 
-	EXPECT_EQ(finder.foundImages().size(), 0);
+	EXPECT_EQ(finder.foundImages().size(), 2);
 
 }

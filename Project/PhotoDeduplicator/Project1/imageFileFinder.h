@@ -11,6 +11,8 @@ public:
 
 	const std::vector<std::string>& foundImages() const;
 
+	void searchFolder(const std::string & folderPath);
+
 protected:
 	std::vector<std::string> _foundImages;
 };

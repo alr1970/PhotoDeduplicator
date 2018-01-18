@@ -42,3 +42,5 @@
 *.VC.db
 *.VC.opendb
 *.cache
+*.enc
+*.user

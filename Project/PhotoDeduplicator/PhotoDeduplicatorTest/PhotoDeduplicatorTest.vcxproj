@@ -161,6 +161,7 @@
   <ItemGroup>
     <ClCompile Include="imageFileFinderTest.cpp" />
     <ClCompile Include="PhotoDeduplicatorTest.cpp" />
+    <ClCompile Include="fileDetailsTest.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>

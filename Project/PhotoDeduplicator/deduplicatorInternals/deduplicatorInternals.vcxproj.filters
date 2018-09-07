@@ -18,9 +18,15 @@
     <ClCompile Include="..\Project1\imageFileFinder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FileDetails.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Project1\imageFileFinder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileDetails.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

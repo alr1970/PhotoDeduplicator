@@ -3,17 +3,17 @@
 
 TEST(FileDetails, constructor)
 {
-	FileDetails fileDets("C:/testData/path/file.txt");
+	FileDetails fileDets("D:/testData/path/file.txt");
 
 	EXPECT_EQ(fileDets.filename(), "file.txt");
-	EXPECT_EQ(fileDets.filepath(), "C:/testData/path");
+	EXPECT_EQ(fileDets.filepath(), "D:/testData/path");
 }
 
 TEST(FileDetails, size)
 {
-	FileDetails fileDets("C:/testData/path/file.txt");
+	FileDetails fileDets("..\\..\\testdata\\path\\file.txt");
 	EXPECT_EQ(fileDets.size(), 0); // doesn't exist
 
-	FileDetails file1Dets("C:/testData/file1.jpg");
-	EXPECT_EQ(file1Dets.size(), 1697397);
+	FileDetails file1Dets("..\\..\\testdata\\file1.jpg");
+	EXPECT_EQ(file1Dets.size(), 135859);
 }

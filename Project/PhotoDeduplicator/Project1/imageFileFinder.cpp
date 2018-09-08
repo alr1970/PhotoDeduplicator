@@ -18,7 +18,7 @@ void ImageFileFinder::searchFolder(const std::string& folderPath)
 	QDir thisDir(folderPath.c_str());
 
 	// Look for images and folders
-	QFileInfoList items = thisDir.entryInfoList(QStringList("*.jpg"), QDir::AllDirs | QDir::Files);
+	QFileInfoList items = thisDir.entryInfoList(QStringList("*.jpg"), QDir::AllDirs | QDir::Files | QDir::NoDotAndDotDot);
 
 	thisDir.cdUp();
 	QFileInfoList::const_iterator constIterator;

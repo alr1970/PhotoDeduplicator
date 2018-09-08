@@ -7,10 +7,13 @@ public:
 	FileDetails(const std::string& fullFillePathAndName);
 	virtual ~FileDetails();
 
-	std::string filepath() { return _filepath; };
-	std::string filename() { return _filename; };
+	bool operator ==(const FileDetails &b) const;
+	bool operator !=(const FileDetails &b) const;
 
-	long long size();
+	std::string filepath() const { return _filepath; };
+	std::string filename() const { return _filename; };
+
+	long long size() const;
 
 protected:
 	// Keep path and name separately beacuse multiple copies of the same file my exist

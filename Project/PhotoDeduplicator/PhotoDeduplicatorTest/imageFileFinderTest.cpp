@@ -5,6 +5,6 @@ TEST(ImageFileFinder, findFrom)
 {
 	ImageFileFinder finder("..\\..\\testdata");
 
-	EXPECT_EQ(finder.foundImages().size(), 2);
+	EXPECT_EQ(finder.foundImages().size(), 4);
 
 }

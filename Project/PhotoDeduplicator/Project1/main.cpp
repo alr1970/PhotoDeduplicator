@@ -2,7 +2,7 @@
 #include <string>
 #include <iostream>
 #include <QtWidgets/QApplication>
-#include "../DeduplicatorInternals/imageFileFinder.h"
+#include "../DeduplicatorInternals/ImageMap.h"
 
 int main(int argc, char *argv[])
 {
@@ -17,11 +17,15 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	ImageFileFinder finder(sourceRoot);
-	std::vector<std::string> files = finder.foundImages();
-	for (auto file = files.begin(); file != files.end(); ++file)
-	{
-		std::cout << *file << std::endl;
+	ImageMap themap(sourceRoot);
+	std::vector<std::string> fileSet = themap.getSet();
+	while (fileSet.size() > 0) {
+		for (auto file = fileSet.begin(); file != fileSet.end(); ++file)
+		{
+			std::cout << *file << std::endl;
+		}
+		std::cout << std::endl;
+		fileSet = themap.getSet();
 	}
 
 	return app.exec();

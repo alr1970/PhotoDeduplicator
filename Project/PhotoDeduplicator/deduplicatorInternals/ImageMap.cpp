@@ -19,9 +19,11 @@ std::vector<std::string> ImageMap::getSet()
 {
 	std::vector<std::string> retVal;
 	if (rangeFront == theFiles.end()) {
-		auto range = theFiles.equal_range(theFiles.begin()->first);
-		rangeFront = range.first;
-		rangeBack = range.second;
+		if (theFiles.begin() != theFiles.end()) {
+			auto range = theFiles.equal_range(theFiles.begin()->first);
+			rangeFront = range.first;
+			rangeBack = range.second;
+		}
 	}
 	else if(rangeBack != theFiles.end()) {
 		auto range = theFiles.equal_range(rangeBack->first);

@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "../Project1/imageFileFinder.h"
+#include "../DeduplicatorInternals/imageFileFinder.h"
 
 TEST(ImageFileFinder, findFrom)
 {

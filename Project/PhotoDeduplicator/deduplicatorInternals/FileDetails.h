@@ -9,6 +9,7 @@ public:
 
 	bool operator ==(const FileDetails &b) const;
 	bool operator !=(const FileDetails &b) const;
+	bool operator <(const FileDetails &b) const;
 
 	std::string filepath() const { return _filepath; };
 	std::string filename() const { return _filename; };

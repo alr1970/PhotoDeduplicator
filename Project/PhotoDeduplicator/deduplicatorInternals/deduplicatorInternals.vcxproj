@@ -112,12 +112,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Project1\imageFileFinder.cpp" />
     <ClCompile Include="FileDetails.cpp" />
+    <ClCompile Include="imageFileFinder.cpp" />
+    <ClCompile Include="ImageMap.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Project1\imageFileFinder.h" />
     <ClInclude Include="FileDetails.h" />
+    <ClInclude Include="imageFileFinder.h" />
+    <ClInclude Include="ImageMap.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

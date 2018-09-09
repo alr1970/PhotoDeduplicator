@@ -15,18 +15,24 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Project1\imageFileFinder.cpp">
+    <ClCompile Include="FileDetails.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FileDetails.cpp">
+    <ClCompile Include="ImageMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imageFileFinder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Project1\imageFileFinder.h">
+    <ClInclude Include="FileDetails.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="FileDetails.h">
+    <ClInclude Include="ImageMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imageFileFinder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

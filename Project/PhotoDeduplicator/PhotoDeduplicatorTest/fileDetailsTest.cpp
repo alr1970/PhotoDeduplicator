@@ -17,7 +17,6 @@ TEST(FileDetails, size)
 	FileDetails file1Dets("..\\..\\testdata\\file1.jpg");
 	EXPECT_EQ(file1Dets.size(), 135859);
 }
-
 TEST(FileDetails, Equality)
 {
 	FileDetails file1("..\\..\\testdata\\file1.jpg");
@@ -28,4 +27,10 @@ TEST(FileDetails, Equality)
 	EXPECT_NE(file1, file2);
 	EXPECT_EQ(file1, file3);
 	EXPECT_EQ(file1, file4);
+}
+TEST(FileDetails, Less)
+{
+	FileDetails file1("..\\..\\testdata\\file1.jpg");
+	FileDetails file2("..\\..\\testdata\\file2.jpg");
+	EXPECT_LT(file2, file1);
 }

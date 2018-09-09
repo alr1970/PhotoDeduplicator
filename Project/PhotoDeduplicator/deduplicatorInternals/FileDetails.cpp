@@ -35,6 +35,11 @@ bool FileDetails::operator!=(const FileDetails & b) const
 	return size() != b.size();
 }
 
+bool FileDetails::operator<(const FileDetails & b) const
+{
+	return size() < b.size();
+}
+
 long long FileDetails::size() const
 {
 	return _size;
